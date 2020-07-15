@@ -15,17 +15,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lR6-va-PQV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game-App-iOS-Dark-Grey-BG" translatesAutoresizingMaskIntoConstraints="NO" id="sBF-3M-yUb" userLabel="Background Wallpaper">
+                                <rect key="frame" x="0.0" y="-5" width="414" height="901"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKc-YZ-oDa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Game Lists" id="GhM-wX-v98"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lR6-va-PQV">
+                                <rect key="frame" x="7" y="88" width="400" height="774"/>
+                                <color key="sectionIndexBackgroundColor" red="0.23354241249999999" green="0.23737505079999999" blue="0.23736804719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lR6-va-PQV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2tO-fb-EML"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lR6-va-PQV" secondAttribute="trailing" id="dPv-gn-bh2"/>
-                            <constraint firstItem="lR6-va-PQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gNB-cP-8n1"/>
+                            <constraint firstItem="CKc-YZ-oDa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ue8-Bb-XFI"/>
+                            <constraint firstItem="CKc-YZ-oDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cGO-QV-WJl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lR6-va-PQV" secondAttribute="trailing" constant="7" id="dPv-gn-bh2"/>
+                            <constraint firstItem="lR6-va-PQV" firstAttribute="top" secondItem="CKc-YZ-oDa" secondAttribute="bottom" id="dVp-R3-hh1"/>
+                            <constraint firstItem="sBF-3M-yUb" firstAttribute="left" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="left" id="gFs-gv-2Ym"/>
+                            <constraint firstItem="lR6-va-PQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="gNB-cP-8n1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKc-YZ-oDa" secondAttribute="trailing" id="gVk-t5-05b"/>
+                            <constraint firstItem="sBF-3M-yUb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-5" id="kQQ-re-apL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lR6-va-PQV" secondAttribute="bottom" id="xqA-XI-7vu"/>
+                            <constraint firstAttribute="bottom" secondItem="sBF-3M-yUb" secondAttribute="bottom" id="ylp-Hm-Hdt"/>
+                            <constraint firstAttribute="right" secondItem="sBF-3M-yUb" secondAttribute="right" id="za3-4d-gWD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +58,7 @@
             <point key="canvasLocation" x="132" y="92"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
+    </resources>
 </document>
