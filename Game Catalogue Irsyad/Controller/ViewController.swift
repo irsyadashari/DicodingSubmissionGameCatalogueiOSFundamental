@@ -59,15 +59,13 @@ extension ViewController : UITableViewDataSource{
             DispatchQueue.main.async() {
                 cell.gamePoster.layer.cornerRadius = 16
                 cell.gamePoster.image = UIImage(data: data)
+                cell.gameTitle.text = game.gameTitle
+                cell.gameRating.text = String(game.gameRating)
+                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                cell.layer.borderWidth = 1
+                cell.layer.cornerRadius = 16
             }
         }
-        
-        cell.gameTitle.text = game.gameTitle
-        cell.gameRating.text = String(game.gameRating)
-        
-        cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 16
         print("table telah di inflate")
         return cell
     }

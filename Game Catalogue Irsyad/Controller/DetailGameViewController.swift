@@ -10,6 +10,13 @@ import UIKit
 
 class DetailGameViewController: UIViewController {
 
+    @IBOutlet weak var gameDetailPoster: UIImageView!
+    @IBOutlet weak var gameDetailTitle: UILabel!
+    @IBOutlet weak var gameDetailRating: UILabel!
+    @IBOutlet weak var gameDetailReleaseDate: UILabel!
+    @IBOutlet weak var gameDetailRecommendedSpecs: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +24,4 @@ class DetailGameViewController: UIViewController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+} 

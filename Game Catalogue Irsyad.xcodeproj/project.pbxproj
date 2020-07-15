@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BF02BDFE24BF409800E210E7 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */; };
 		BF02BDFF24BF409800E210E7 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */; };
+		BF02BE0224BF4FC400E210E7 /* DeveloperProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */; };
+		BF02BE0324BF4FC400E210E7 /* DeveloperProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */; };
+		BF02BE0624BF5ADF00E210E7 /* FavoriteGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */; };
+		BF02BE0724BF5ADF00E210E7 /* FavoriteGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */; };
 		BF59EF7B24B880E60018C482 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF7A24B880E60018C482 /* GameData.swift */; };
 		BF59EF8224BD8F820018C482 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF8124BD8F820018C482 /* GameManager.swift */; };
 		BF6469F924BE6E8100E624F2 /* GameTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6469F724BE6E8100E624F2 /* GameTVCell.swift */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
+		BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperProfileViewController.swift; sourceTree = "<group>"; };
+		BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperProfileViewController.xib; sourceTree = "<group>"; };
+		BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGamesViewController.swift; sourceTree = "<group>"; };
+		BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteGamesViewController.xib; sourceTree = "<group>"; };
 		BF59EF7A24B880E60018C482 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		BF59EF8124BD8F820018C482 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		BF6469F724BE6E8100E624F2 /* GameTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTVCell.swift; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 				BFEAEFC824B3590A00ED76B0 /* ViewController.swift */,
 				BF6469F724BE6E8100E624F2 /* GameTVCell.swift */,
 				BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */,
+				BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */,
+				BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,6 +123,8 @@
 				BFEAEFCA24B3590A00ED76B0 /* Main.storyboard */,
 				BF6469F824BE6E8100E624F2 /* GameTVCell.xib */,
 				BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */,
+				BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */,
+				BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFEAEFD124B3590E00ED76B0 /* LaunchScreen.storyboard in Resources */,
+				BF02BE0724BF5ADF00E210E7 /* FavoriteGamesViewController.xib in Resources */,
 				BF02BDFF24BF409800E210E7 /* DetailGameViewController.xib in Resources */,
 				BFEAEFCE24B3590E00ED76B0 /* Assets.xcassets in Resources */,
+				BF02BE0324BF4FC400E210E7 /* DeveloperProfileViewController.xib in Resources */,
 				BFEAEFCC24B3590A00ED76B0 /* Main.storyboard in Resources */,
 				BF6469FA24BE6E8100E624F2 /* GameTVCell.xib in Resources */,
 			);
@@ -195,7 +209,9 @@
 				BF02BDFE24BF409800E210E7 /* DetailGameViewController.swift in Sources */,
 				BF59EF7B24B880E60018C482 /* GameData.swift in Sources */,
 				BFEAEFC524B3590A00ED76B0 /* AppDelegate.swift in Sources */,
+				BF02BE0224BF4FC400E210E7 /* DeveloperProfileViewController.swift in Sources */,
 				BFEAEFC724B3590A00ED76B0 /* SceneDelegate.swift in Sources */,
+				BF02BE0624BF5ADF00E210E7 /* FavoriteGamesViewController.swift in Sources */,
 				BF6469F924BE6E8100E624F2 /* GameTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
