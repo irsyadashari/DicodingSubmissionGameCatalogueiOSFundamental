@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF59EF7B24B880E60018C482 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF7A24B880E60018C482 /* GameData.swift */; };
+		BF59EF8224BD8F820018C482 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF8124BD8F820018C482 /* GameManager.swift */; };
+		BF6469F924BE6E8100E624F2 /* GameTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6469F724BE6E8100E624F2 /* GameTVCell.swift */; };
+		BF6469FA24BE6E8100E624F2 /* GameTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6469F824BE6E8100E624F2 /* GameTVCell.xib */; };
+		BFEAEFC524B3590A00ED76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEFC424B3590A00ED76B0 /* AppDelegate.swift */; };
+		BFEAEFC724B3590A00ED76B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEFC624B3590A00ED76B0 /* SceneDelegate.swift */; };
+		BFEAEFC924B3590A00ED76B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEFC824B3590A00ED76B0 /* ViewController.swift */; };
+		BFEAEFCC24B3590A00ED76B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEFCA24B3590A00ED76B0 /* Main.storyboard */; };
+		BFEAEFCE24B3590E00ED76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEFCD24B3590E00ED76B0 /* Assets.xcassets */; };
+		BFEAEFD124B3590E00ED76B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEFCF24B3590E00ED76B0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF59EF7A24B880E60018C482 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		BF59EF8124BD8F820018C482 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		BF6469F724BE6E8100E624F2 /* GameTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTVCell.swift; sourceTree = "<group>"; };
+		BF6469F824BE6E8100E624F2 /* GameTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTVCell.xib; sourceTree = "<group>"; };
+		BFEAEFC124B3590A00ED76B0 /* Game Catalogue Irsyad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Catalogue Irsyad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEAEFC424B3590A00ED76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFEAEFC624B3590A00ED76B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFEAEFC824B3590A00ED76B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFEAEFCB24B3590A00ED76B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFEAEFCD24B3590E00ED76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFEAEFD024B3590E00ED76B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFEAEFD224B3590E00ED76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFEAEFBE24B3590A00ED76B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFEAEFB824B3590A00ED76B0 = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFC324B3590A00ED76B0 /* Game Catalogue Irsyad */,
+				BFEAEFC224B3590A00ED76B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFEAEFC224B3590A00ED76B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFC124B3590A00ED76B0 /* Game Catalogue Irsyad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFEAEFC324B3590A00ED76B0 /* Game Catalogue Irsyad */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFDB24B3593800ED76B0 /* View */,
+				BFEAEFDA24B3592E00ED76B0 /* Controller */,
+				BFEAEFD924B3592900ED76B0 /* Base */,
+				BFEAEFD824B3592400ED76B0 /* Model */,
+				BFEAEFCD24B3590E00ED76B0 /* Assets.xcassets */,
+				BFEAEFCF24B3590E00ED76B0 /* LaunchScreen.storyboard */,
+				BFEAEFD224B3590E00ED76B0 /* Info.plist */,
+			);
+			path = "Game Catalogue Irsyad";
+			sourceTree = "<group>";
+		};
+		BFEAEFD824B3592400ED76B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF59EF7A24B880E60018C482 /* GameData.swift */,
+				BF59EF8124BD8F820018C482 /* GameManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFEAEFD924B3592900ED76B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFC424B3590A00ED76B0 /* AppDelegate.swift */,
+				BFEAEFC624B3590A00ED76B0 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BFEAEFDA24B3592E00ED76B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFC824B3590A00ED76B0 /* ViewController.swift */,
+				BF6469F724BE6E8100E624F2 /* GameTVCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFEAEFDB24B3593800ED76B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEFCA24B3590A00ED76B0 /* Main.storyboard */,
+				BF6469F824BE6E8100E624F2 /* GameTVCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFEAEFC024B3590A00ED76B0 /* Game Catalogue Irsyad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEAEFD524B3590E00ED76B0 /* Build configuration list for PBXNativeTarget "Game Catalogue Irsyad" */;
+			buildPhases = (
+				BFEAEFBD24B3590A00ED76B0 /* Sources */,
+				BFEAEFBE24B3590A00ED76B0 /* Frameworks */,
+				BFEAEFBF24B3590A00ED76B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game Catalogue Irsyad";
+			productName = "Game Catalogue Irsyad";
+			productReference = BFEAEFC124B3590A00ED76B0 /* Game Catalogue Irsyad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFEAEFB924B3590A00ED76B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ashari Corps";
+				TargetAttributes = {
+					BFEAEFC024B3590A00ED76B0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = BFEAEFBC24B3590A00ED76B0 /* Build configuration list for PBXProject "Game Catalogue Irsyad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFEAEFB824B3590A00ED76B0;
+			productRefGroup = BFEAEFC224B3590A00ED76B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFEAEFC024B3590A00ED76B0 /* Game Catalogue Irsyad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFEAEFBF24B3590A00ED76B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEAEFD124B3590E00ED76B0 /* LaunchScreen.storyboard in Resources */,
+				BFEAEFCE24B3590E00ED76B0 /* Assets.xcassets in Resources */,
+				BFEAEFCC24B3590A00ED76B0 /* Main.storyboard in Resources */,
+				BF6469FA24BE6E8100E624F2 /* GameTVCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFEAEFBD24B3590A00ED76B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEAEFC924B3590A00ED76B0 /* ViewController.swift in Sources */,
+				BF59EF8224BD8F820018C482 /* GameManager.swift in Sources */,
+				BF59EF7B24B880E60018C482 /* GameData.swift in Sources */,
+				BFEAEFC524B3590A00ED76B0 /* AppDelegate.swift in Sources */,
+				BFEAEFC724B3590A00ED76B0 /* SceneDelegate.swift in Sources */,
+				BF6469F924BE6E8100E624F2 /* GameTVCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFEAEFCA24B3590A00ED76B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEAEFCB24B3590A00ED76B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFEAEFCF24B3590E00ED76B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFEAEFD024B3590E00ED76B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFEAEFD324B3590E00ED76B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFEAEFD424B3590E00ED76B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFEAEFD624B3590E00ED76B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAF4VGV8W6;
+				INFOPLIST_FILE = "Game Catalogue Irsyad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irsyadashari.www.Game-Catalogue-Irsyad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFEAEFD724B3590E00ED76B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAF4VGV8W6;
+				INFOPLIST_FILE = "Game Catalogue Irsyad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irsyadashari.www.Game-Catalogue-Irsyad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFEAEFBC24B3590A00ED76B0 /* Build configuration list for PBXProject "Game Catalogue Irsyad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEAEFD324B3590E00ED76B0 /* Debug */,
+				BFEAEFD424B3590E00ED76B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEAEFD524B3590E00ED76B0 /* Build configuration list for PBXNativeTarget "Game Catalogue Irsyad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEAEFD624B3590E00ED76B0 /* Debug */,
+				BFEAEFD724B3590E00ED76B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFEAEFB924B3590A00ED76B0 /* Project object */;
+}
