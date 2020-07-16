@@ -4,7 +4,6 @@
 //
 //  Created by Irsyad Ashari on 06/07/20.
 //  Copyright © 2020 Ashari Corps. All rights reserved.
-//
 
 import UIKit
 
@@ -13,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var gameTableView: UITableView!
     var gamesData : [GameData] = []
     
-    var dataDownloaded : [GameModel] = []
+    var gamePosterDownloaded : [UIImage] = []
     
     var gameManager = GameManager()
     
@@ -28,8 +27,6 @@ class ViewController: UIViewController {
         gameTableView.register(UINib(nibName: "GameTVCell", bundle: nil), forCellReuseIdentifier: "GameCell")
         
     }
-    
-    
 }
 
 extension ViewController : UITableViewDataSource{
@@ -41,74 +38,53 @@ extension ViewController : UITableViewDataSource{
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "GameCell", for : indexPath) as! GameTVCell
         
         let game = gamesData[indexPath.row]
         
         let urlPoster = URL(string: game.gamePoster)!
         
+        cell.gameTitle.text = game.gameTitle
+        cell.gameRating.text = String(game.gameRating)
+        
+        //styling
+        cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 16
+        cell.gamePoster.layer.cornerRadius = 16
+        
         getData(from: urlPoster) { data, response, error in
             guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? urlPoster.lastPathComponent)
-            print("Download Finished")
             
             DispatchQueue.main.async() {
-                
                 //Inflating data at Homepage
-                cell.gamePoster.layer.cornerRadius = 16
                 cell.gamePoster.image = UIImage(data: data)
-                cell.gameTitle.text = game.gameTitle
-                cell.gameRating.text = String(game.gameRating)
-                
-                //styling
-                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-                cell.layer.borderWidth = 1
-                cell.layer.cornerRadius = 16
-                
             }
-            
-            //Downloading the data to an Array
-            let gameDownloaded : GameModel = GameModel(
-                           id : game.gameId,
-                           poster : UIImage(data: data)!,
-                           title : game.gameTitle,
-                           releasedDate : game.gameReleasedDate,
-                           rating : String(game.gameRating)
-                       )
-            self.dataDownloaded.append(gameDownloaded)
-            print("Data Added")
         }
         return cell
     }
 }
 
 extension ViewController: UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         // Memanggil View Controller dengan berkas NIB/XIB di dalamnya
+        
+        // Memanggil View Controller dengan berkas NIB/XIB di dalamnya
         let detail = DetailGameViewController(nibName: "DetailGameViewController", bundle: nil)
-
-        //Taking reference on the tapped Cardview Object
-        let tappedGameData : GameModel = dataDownloaded[indexPath.row]
-        print(indexPath.row)
-
+        
         // Mengirim data hero
-        detail.game = tappedGameData
-        print("Game yang di tap : ")
-        print(String((detail.game?.title)!))
+//        detail.game = gamesData[(indexPath.row)]
 
         // Push/mendorong view controller lain
         self.navigationController?.pushViewController(detail, animated: true)
-
      }
  }
 
 extension ViewController : GameManagerDelegate{
     
     func didUpdateGame(_ gameManager: GameManager, game: GamesModel) {
-        
-        print(game.count)
         
         for item in game.results{
             gamesData.append(item)
@@ -120,7 +96,6 @@ extension ViewController : GameManagerDelegate{
         }
         
     }
-    
     func didFailWithError(error: Error) {
         print(error)
     }

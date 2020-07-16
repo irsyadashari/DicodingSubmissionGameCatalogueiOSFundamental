@@ -18,17 +18,25 @@ class DetailGameViewController: UIViewController {
     // Temporary Game Data
     var game : GameModel?
     
+    var gamePoster : UIImage = UIImage(imageLiteralResourceName: "loading-image-cardview-game-poster")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
          // implementing game's data into UI
            if let result = game {
-            gameDetailPoster.image = result.poster
-            gameDetailTitle.text = result.title
-            gameDetailRating.text = String(result.rating)
-            gameDetailReleaseDate.text = result.releasedDate
+        
+            self.gamePoster = result.poster
+            self.gameDetailPoster.image = result.poster
+            self.gameDetailTitle.text = result.title
+            self.gameDetailRating.text = String(result.rating)
+            self.gameDetailReleaseDate.text = result.releasedDate
            }
 
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
    
 } 
