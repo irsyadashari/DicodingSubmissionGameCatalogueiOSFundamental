@@ -38,7 +38,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Game List" id="BBd-b4-oEZ"/>
                     <connections>
-                        <outlet property="gameTableView" destination="lR6-va-PQV" id="dly-4h-mSs"/>
+                        <outlet property="gameTableView" destination="lR6-va-PQV" id="BNx-CT-GZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
