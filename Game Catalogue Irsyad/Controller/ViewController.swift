@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         gameTableView.dataSource = self
         gameTableView.register(UINib(nibName: "GameTVCell", bundle: nil), forCellReuseIdentifier: "GameCell")
         
-        
     }
     
     
@@ -96,11 +95,12 @@ extension ViewController: UITableViewDelegate{
 
         // Mengirim data hero
         detail.game = tappedGameData
+        print("Game yang di tap : ")
+        print(String((detail.game?.title)!))
 
         // Push/mendorong view controller lain
-//        self.navigationController?.pushViewController(detail, animated: true)
-//        let detailViewController = storyboard?.instantiateViewController(withIdentifier: "DetailGameViewController") as! UIViewController
-//        navigationController?.pushViewController(detailViewController, animated: true)
+        self.navigationController?.pushViewController(detail, animated: true)
+
      }
  }
 
@@ -113,10 +113,10 @@ extension ViewController : GameManagerDelegate{
         for item in game.results{
             gamesData.append(item)
         }
-//        print(gamesData)
         
         DispatchQueue.main.async {
             self.gameTableView.reloadData()
+            print("data di reload")
         }
         
     }

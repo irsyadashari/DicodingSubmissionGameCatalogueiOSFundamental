@@ -14,7 +14,6 @@ class DetailGameViewController: UIViewController {
     @IBOutlet weak var gameDetailTitle: UILabel!
     @IBOutlet weak var gameDetailRating: UILabel!
     @IBOutlet weak var gameDetailReleaseDate: UILabel!
-    @IBOutlet weak var gameDetailRecommendedSpecs: UITextView!
     
     // Temporary Game Data
     var game : GameModel?
