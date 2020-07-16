@@ -16,12 +16,20 @@ class DetailGameViewController: UIViewController {
     @IBOutlet weak var gameDetailReleaseDate: UILabel!
     @IBOutlet weak var gameDetailRecommendedSpecs: UITextView!
     
+    // Temporary Game Data
+    var game : GameModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+         // implementing game's data into UI
+           if let result = game {
+            gameDetailPoster.image = result.poster
+            gameDetailTitle.text = result.title
+            gameDetailRating.text = String(result.rating)
+            gameDetailReleaseDate.text = result.releasedDate
+           }
+
     }
-
-
+   
 } 

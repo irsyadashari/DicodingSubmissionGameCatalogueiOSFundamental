@@ -43,7 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="muhirsyadashari@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-xB-9cT">
-                    <rect key="frame" x="91.333333333333314" y="402" width="231.66666666666669" height="21.666666666666686"/>
+                    <rect key="frame" x="91.333333333333329" y="402" width="231.66666666666669" height="21.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gna-q5-R92" userLabel="Social Media">
-                    <rect key="frame" x="116.66666666666669" y="701" width="180.66666666666663" height="151"/>
+                    <rect key="frame" x="116.66666666666667" y="701" width="180.66666666666663" height="151"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-eC-jpJ">
                             <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="45"/>
