@@ -12,9 +12,11 @@ import UIKit
 struct GameModel {
     
     let id : Int
-    let poster : UIImage
+    let poster : String
     let title : String
     let releasedDate : String
     let rating : String
     
 }
+
+

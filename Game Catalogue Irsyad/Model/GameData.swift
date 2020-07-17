@@ -34,6 +34,8 @@ struct GameData : Codable{
 
 
 
+
+
 // CONTOH DALAM ARRAY
 //-----------------------------------------------------------------
 //func dcdJSON(data: Data) {

@@ -65,6 +65,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cell" destination="H2p-sc-9uM" id="uAq-Md-G8y"/>
                 <outlet property="gamePoster" destination="N5h-bs-sO1" id="xbI-pE-ujP"/>
                 <outlet property="gameRating" destination="Kih-Pc-koA" id="2b7-ab-SYS"/>
                 <outlet property="gameTitle" destination="PCn-BV-Mnl" id="duI-HE-GjV"/>
