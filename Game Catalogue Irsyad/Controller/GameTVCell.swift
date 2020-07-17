@@ -19,7 +19,6 @@ class GameTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        cell.layer.cornerRadius = cell.frame.size.height/13 
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -7,30 +7,8 @@
 //
 
 import UIKit
-
-extension UIImageView {
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            DispatchQueue.main.async() { [weak self] in
-                self?.image = image
-            }
-        }.resume()
-    }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
-        guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
-    }
-}
-
+import Nuke
 class DetailGameViewController: UIViewController {
-
     @IBOutlet weak var gameDetailPoster: UIImageView!
     @IBOutlet weak var gameDetailTitle: UILabel!
     @IBOutlet weak var gameDetailRating: UILabel!
@@ -42,17 +20,24 @@ class DetailGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         // implementing game's data into UI
-           if let result = game {
-
-            let urlString = result.poster
-            let url = URL(string: urlString)!
+        // implementing game's data into UI
+        if let result = game {
             
-            self.gameDetailPoster.downloaded(from: url)
+            // This line doesn't change
+            let url = URL(string : result.poster)!
+            
+            // 2
+            let request = ImageRequest(
+                url: url,
+                targetSize: CGSize(width: 414, height: 409),
+                contentMode: .aspectFill)
+            
+            Nuke.loadImage(with: request, into: gameDetailPoster)
             self.gameDetailTitle.text = result.title
             self.gameDetailRating.text = String(result.rating)
             self.gameDetailReleaseDate.text = result.releasedDate
-           }
-
+        }
     }
-} 
+}
+
+
