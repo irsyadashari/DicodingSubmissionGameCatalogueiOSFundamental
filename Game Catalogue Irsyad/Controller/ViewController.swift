@@ -6,6 +6,7 @@
 //  Copyright © 2020 Ashari Corps. All rights reserved.
 
 import UIKit
+import Nuke
 
 //var gamesData : [GameData] = []
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1BDF1F1BAF6D4DA12E3846 /* Pods_Game_Catalogue_Irsyad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638935243174E15678940B25 /* Pods_Game_Catalogue_Irsyad.framework */; };
 		BF02BDFE24BF409800E210E7 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */; };
 		BF02BDFF24BF409800E210E7 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */; };
 		BF02BE0224BF4FC400E210E7 /* DeveloperProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		638935243174E15678940B25 /* Pods_Game_Catalogue_Irsyad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_Catalogue_Irsyad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE11CD5E983C6BC4E999CF16 /* Pods-Game Catalogue Irsyad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Catalogue Irsyad.debug.xcconfig"; path = "Target Support Files/Pods-Game Catalogue Irsyad/Pods-Game Catalogue Irsyad.debug.xcconfig"; sourceTree = "<group>"; };
 		BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperProfileViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		BFEAEFCD24B3590E00ED76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEAEFD024B3590E00ED76B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFEAEFD224B3590E00ED76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF37C0885EBFD04939D4DFA /* Pods-Game Catalogue Irsyad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Catalogue Irsyad.release.xcconfig"; path = "Target Support Files/Pods-Game Catalogue Irsyad/Pods-Game Catalogue Irsyad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1BDF1F1BAF6D4DA12E3846 /* Pods_Game_Catalogue_Irsyad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30F88CC43EB20251FE6C6C1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE11CD5E983C6BC4E999CF16 /* Pods-Game Catalogue Irsyad.debug.xcconfig */,
+				CBF37C0885EBFD04939D4DFA /* Pods-Game Catalogue Irsyad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B825F3CB36B9EEAE40A2496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				638935243174E15678940B25 /* Pods_Game_Catalogue_Irsyad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFEAEFB824B3590A00ED76B0 = {
 			isa = PBXGroup;
 			children = (
 				BFEAEFC324B3590A00ED76B0 /* Game Catalogue Irsyad */,
 				BFEAEFC224B3590A00ED76B0 /* Products */,
+				30F88CC43EB20251FE6C6C1E /* Pods */,
+				6B825F3CB36B9EEAE40A2496 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEAEFD524B3590E00ED76B0 /* Build configuration list for PBXNativeTarget "Game Catalogue Irsyad" */;
 			buildPhases = (
+				2721BDCA97CE6713A130B002 /* [CP] Check Pods Manifest.lock */,
 				BFEAEFBD24B3590A00ED76B0 /* Sources */,
 				BFEAEFBE24B3590A00ED76B0 /* Frameworks */,
 				BFEAEFBF24B3590A00ED76B0 /* Resources */,
+				8D9912E318E8DB03C044CB85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2721BDCA97CE6713A130B002 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Game Catalogue Irsyad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9912E318E8DB03C044CB85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Game Catalogue Irsyad/Pods-Game Catalogue Irsyad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Game Catalogue Irsyad/Pods-Game Catalogue Irsyad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Game Catalogue Irsyad/Pods-Game Catalogue Irsyad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFEAEFBD24B3590A00ED76B0 /* Sources */ = {
@@ -358,6 +427,7 @@
 		};
 		BFEAEFD624B3590E00ED76B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE11CD5E983C6BC4E999CF16 /* Pods-Game Catalogue Irsyad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +447,7 @@
 		};
 		BFEAEFD724B3590E00ED76B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF37C0885EBFD04939D4DFA /* Pods-Game Catalogue Irsyad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
