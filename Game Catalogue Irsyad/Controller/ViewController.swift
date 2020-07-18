@@ -16,37 +16,8 @@ class ViewController: UIViewController,UITabBarDelegate {
     @IBOutlet weak var profileBtnTabBar: UITabBarItem!
     @IBOutlet weak var tabBarHome: UITabBar!
     
-    
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if(item.tag == 1) {
-            // Code for item 1
-            print("item \(String(item.title!)) di klik")
-            let home = ViewController(nibName: "ViewController", bundle: nil)
-            self.navigationController?.pushViewController(home, animated: true)
-            
-        } else if(item.tag == 2) {
-            // Code for item 2
-            tabBarHome.selectedItem = tabBarHome.items![0]
-            print("item \(String(item.title!)) di klik")
-            let favorite = FavoriteGamesViewController(nibName: "FavoriteGamesViewController", bundle: nil)
-            self.navigationController?.pushViewController(favorite, animated: true)
-            
-        } else if(item.tag == 3) {
-            // Code for item 3
-            tabBarHome.selectedItem = tabBarHome.items![0]
-             print("item \(String(item.title!)) di klik")
-            let profile = DeveloperProfileViewController(nibName: "DeveloperProfileViewController", bundle: nil)
-            self.navigationController?.pushViewController(profile, animated: true)
-            
-        }
-//        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
-//        detail.site = sites[indexPath.row]
-//
-//        self.navigationController?.pushViewController(detail, animated: true)
-    }
-    
     var gamesData = [GameData]()
-    
+    var favoriteGamesData : [GameData]?
     var gameManager = GameManager()
     
     override func viewDidLoad() {
@@ -91,7 +62,30 @@ class ViewController: UIViewController,UITabBarDelegate {
         
     }
     
-    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if(item.tag == 1) {
+            // Code for item 1
+            print("item \(String(item.title!)) di klik")
+            let home = ViewController(nibName: "ViewController", bundle: nil)
+            self.navigationController?.pushViewController(home, animated: true)
+            
+        } else if(item.tag == 2) {
+            // Code for item 2
+            tabBarHome.selectedItem = tabBarHome.items![0]
+            print("item \(String(item.title!)) di klik")
+            let favorite = FavoriteGamesViewController(nibName: "FavoriteGamesViewController", bundle: nil)
+            favorite.gamesData = gamesData
+            self.navigationController?.pushViewController(favorite, animated: true)
+            
+        } else if(item.tag == 3) {
+            // Code for item 3
+            tabBarHome.selectedItem = tabBarHome.items![0]
+             print("item \(String(item.title!)) di klik")
+            let profile = DeveloperProfileViewController(nibName: "DeveloperProfileViewController", bundle: nil)
+            self.navigationController?.pushViewController(profile, animated: true)
+            
+        }
+    }
     
     func parseDate(dateUnformatted: String)-> String{
         

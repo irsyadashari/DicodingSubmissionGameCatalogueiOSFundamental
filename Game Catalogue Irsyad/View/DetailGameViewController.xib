@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailGameViewController" customModule="Game_Catalogue_Irsyad" customModuleProvider="target">
             <connections>
+                <outlet property="gameDescription" destination="5Zl-Fq-Ifh" id="Ubq-8j-wPb"/>
                 <outlet property="gameDetailPoster" destination="KlK-cF-zUx" id="won-oq-KS9"/>
                 <outlet property="gameDetailRating" destination="h2c-0W-Mkb" id="NHR-fV-ZOp"/>
                 <outlet property="gameDetailReleaseDate" destination="hJy-qM-pbv" id="0s7-gU-dEC"/>
@@ -87,16 +88,26 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="deskripsi sedang dimuat ..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-Fq-Ifh" userLabel="description text">
+                                    <rect key="frame" x="11" y="90.333333333333371" width="388" height="318.66666666666669"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstItem="5Zl-Fq-Ifh" firstAttribute="top" secondItem="hJy-qM-pbv" secondAttribute="bottom" constant="14" id="0p6-D2-AhL"/>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="top" secondItem="wsA-26-yt7" secondAttribute="top" constant="51.000000000000007" id="EtX-G6-dkm"/>
+                                <constraint firstItem="5Zl-Fq-Ifh" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" constant="11" id="P0k-Ug-MIl"/>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" constant="11" id="W1E-3m-Vlg"/>
+                                <constraint firstAttribute="trailing" secondItem="5Zl-Fq-Ifh" secondAttribute="trailing" constant="15" id="Xkm-UL-LUz"/>
                                 <constraint firstItem="hLk-cu-qOt" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" constant="10" id="adK-0f-jHo"/>
                                 <constraint firstItem="UOx-UG-Y8c" firstAttribute="top" secondItem="wsA-26-yt7" secondAttribute="top" id="aic-F4-jXV"/>
                                 <constraint firstAttribute="trailing" secondItem="UOx-UG-Y8c" secondAttribute="trailing" id="kwq-eB-INM"/>
                                 <constraint firstAttribute="bottom" secondItem="UOx-UG-Y8c" secondAttribute="bottom" id="l1L-bg-Ynu"/>
                                 <constraint firstItem="UOx-UG-Y8c" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" id="mgM-ji-y5A"/>
+                                <constraint firstAttribute="bottom" secondItem="5Zl-Fq-Ifh" secondAttribute="bottom" id="ozZ-T1-cFy"/>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="top" secondItem="hLk-cu-qOt" secondAttribute="bottom" constant="8.6666666666666643" id="xcy-Pk-eeu"/>
                             </constraints>
                         </view>
@@ -119,7 +130,7 @@
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="leading" secondItem="bQy-5d-Hge" secondAttribute="leading" id="n5T-Uc-kEO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="y0g-se-tq6"/>
-            <point key="canvasLocation" x="80" y="-393"/>
+            <point key="canvasLocation" x="79.710144927536234" y="-393.08035714285711"/>
         </view>
     </objects>
     <resources>

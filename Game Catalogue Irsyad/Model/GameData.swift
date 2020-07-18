@@ -31,3 +31,8 @@ struct GameData : Codable{
         case gameRating = "rating"
     }
 }
+
+struct GameDataById : Codable{
+    let id : Int
+    let description : String
+}

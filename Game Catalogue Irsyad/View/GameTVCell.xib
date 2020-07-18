@@ -52,6 +52,18 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obD-0O-7kj">
+                        <rect key="frame" x="236" y="166" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="cBd-hu-fP1"/>
+                            <constraint firstAttribute="height" constant="35" id="ltq-Wf-Ugs"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="not-favorited">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                        </state>
+                        <state key="selected" image="star.fill" catalog="system"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="lua-ly-GlD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="0V1-WS-NgQ"/>
@@ -59,9 +71,11 @@
                     <constraint firstItem="DWW-ee-B2e" firstAttribute="top" secondItem="PCn-BV-Mnl" secondAttribute="bottom" id="Mcg-Ml-cDt"/>
                     <constraint firstItem="e2d-VU-xzP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mwb-Dm-qmb"/>
                     <constraint firstItem="DWW-ee-B2e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="T6q-nd-r5A"/>
+                    <constraint firstAttribute="trailing" secondItem="obD-0O-7kj" secondAttribute="trailing" constant="10" id="dbN-s7-06M"/>
                     <constraint firstItem="N5h-bs-sO1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jZX-4w-be3"/>
                     <constraint firstItem="PCn-BV-Mnl" firstAttribute="top" secondItem="N5h-bs-sO1" secondAttribute="bottom" id="rXB-UH-RRz"/>
                     <constraint firstItem="lua-ly-GlD" firstAttribute="top" secondItem="DWW-ee-B2e" secondAttribute="bottom" id="vEC-t3-bhM"/>
+                    <constraint firstItem="obD-0O-7kj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="166" id="yHN-3O-ynO"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
@@ -75,17 +89,19 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cell" destination="H2p-sc-9uM" id="uAq-Md-G8y"/>
+                <outlet property="favoriteBtnCell" destination="obD-0O-7kj" id="dVP-lU-UAa"/>
                 <outlet property="gamePoster" destination="N5h-bs-sO1" id="xbI-pE-ujP"/>
                 <outlet property="gameRating" destination="Kih-Pc-koA" id="2b7-ab-SYS"/>
                 <outlet property="gameReleasedDates" destination="lua-ly-GlD" id="W0L-SG-d1R"/>
                 <outlet property="gameTitle" destination="PCn-BV-Mnl" id="duI-HE-GjV"/>
             </connections>
-            <point key="canvasLocation" x="35.507246376811594" y="85.044642857142847"/>
+            <point key="canvasLocation" x="35.507246376811594" y="84.375"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
         <image name="loading-image-cardview-game-poster" width="866" height="526"/>
+        <image name="not-favorited" width="340" height="340"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>

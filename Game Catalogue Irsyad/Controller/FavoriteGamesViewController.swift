@@ -10,9 +10,17 @@ import UIKit
 
 class FavoriteGamesViewController: UIViewController {
 
+    @IBOutlet weak var favoriteTableView: UITableView!
+    
+    var gamesData : [GameData]?
+    var favoriteGamesData : [GameData]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let gamesData = gamesData{
+            
+        }
         // Do any additional setup after loading the view.
     }
 

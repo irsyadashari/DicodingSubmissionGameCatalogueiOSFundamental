@@ -24,6 +24,11 @@ struct GameManager{
         performRequest(with: urlString)
     }
     
+//    func fetchGameById(gameId : Int){
+//        let urlString = "\(gameURL)/\(gameId)"
+//        performRequest(with: urlString)
+//    }
+//    
     func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)

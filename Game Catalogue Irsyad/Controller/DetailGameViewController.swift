@@ -13,12 +13,17 @@ class DetailGameViewController: UIViewController {
     @IBOutlet weak var gameDetailTitle: UILabel!
     @IBOutlet weak var gameDetailRating: UILabel!
     @IBOutlet weak var gameDetailReleaseDate: UILabel!
+    @IBOutlet weak var gameDescription: UITextView!
     
     // Temporary Game Data
     var game : GameModel?
+    var gameDownloader = GameDownloaderManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gameDownloader.delegate = self
+       
         
         // implementing game's data into UI
         if let result = game {
@@ -29,6 +34,8 @@ class DetailGameViewController: UIViewController {
                 contentMode: .aspectFill)
     
             Nuke.loadImage(with: request, into: gameDetailPoster)
+            
+            gameDownloader.fetchGameById(gameId: result.id)
             self.gameDetailTitle.text = result.title
             self.gameDetailRating.text = String(result.rating)
             self.gameDetailReleaseDate.text = "Released Date : \(parseDate(dateUnformatted: result.releasedDate))"
@@ -75,6 +82,83 @@ class DetailGameViewController: UIViewController {
                return " "
            }
        }
+}
+
+protocol GameDownloaderDelegate{
+    
+    func didGameDownloaded(_ gameManager : GameDownloaderManager, game : GameDataById)
+    func didFail(error: Error)
+}
+
+struct GameDownloaderManager{
+    let gameURL = "https://api.rawg.io/api/games"
+    
+    var delegate: GameDownloaderDelegate?
+    
+    func fetchGameById(gameId : Int){
+        let urlString = "\(gameURL)/\(gameId)"
+        performRequest(with: urlString)
+    }
+
+    func performRequest(with urlString: String) {
+        if let url = URL(string: urlString) {
+            let session = URLSession(configuration: .default)
+            let task = session.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    self.delegate?.didFail(error: error!)
+                    return
+                }
+                if let safeData = data {
+                    if let games = self.parseJSON(safeData) {
+                        self.delegate?.didGameDownloaded(self, game: games)
+                    }
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    func parseJSON(_ gameData: Data) -> GameDataById? {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(GameDataById.self, from: gameData)
+            let id = decodedData.id
+            let description = decodedData.description
+            let game = GameDataById(id: id, description:description)
+            return game
+            
+        } catch {
+            delegate?.didFail(error: error)
+            return nil
+        }
+    }
+}
+
+extension DetailGameViewController : GameDownloaderDelegate{
+    func didGameDownloaded(_ gameManager: GameDownloaderManager, game: GameDataById) {
+        DispatchQueue.main.async() {
+            let editedText = game.description.replacingOccurrences(of: "<p>", with: "\n")
+            let editedText2 = editedText.replacingOccurrences(of: "</p>", with: "\n")
+            let editedText3 = editedText2.replacingOccurrences(of: "<br />", with: "\n")
+            self.gameDescription.text = editedText3
+        }
+    }
+    
+    func didFail(error: Error) {
+        print(error)
+    }
+    
+ 
+    
+//    func didUpdateGame(_ gameManager: GameManager, game: GamesModel) {
+////        for item in game.results{
+////            gamesData.append(item)
+////            print("item appended : \(item.gameTitle)")
+////        }
+////         DispatchQueue.main.async() {
+////            self.gameTableView.reloadData()
+////        }
+//    }
 }
 
 
