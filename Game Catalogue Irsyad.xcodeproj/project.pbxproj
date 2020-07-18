@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,6 @@
 		BF02BDFF24BF409800E210E7 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */; };
 		BF02BE0224BF4FC400E210E7 /* DeveloperProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */; };
 		BF02BE0324BF4FC400E210E7 /* DeveloperProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */; };
-		BF02BE0624BF5ADF00E210E7 /* FavoriteGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */; };
-		BF02BE0724BF5ADF00E210E7 /* FavoriteGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */; };
 		BF02BE0924BFF1F500E210E7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02BE0824BFF1F500E210E7 /* GameModel.swift */; };
 		BF59EF7B24B880E60018C482 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF7A24B880E60018C482 /* GameData.swift */; };
 		BF59EF8224BD8F820018C482 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59EF8124BD8F820018C482 /* GameManager.swift */; };
@@ -34,8 +32,6 @@
 		BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperProfileViewController.swift; sourceTree = "<group>"; };
 		BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperProfileViewController.xib; sourceTree = "<group>"; };
-		BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGamesViewController.swift; sourceTree = "<group>"; };
-		BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteGamesViewController.xib; sourceTree = "<group>"; };
 		BF02BE0824BFF1F500E210E7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		BF59EF7A24B880E60018C482 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		BF59EF8124BD8F820018C482 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
@@ -70,7 +66,6 @@
 				AE11CD5E983C6BC4E999CF16 /* Pods-Game Catalogue Irsyad.debug.xcconfig */,
 				CBF37C0885EBFD04939D4DFA /* Pods-Game Catalogue Irsyad.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,7 +135,6 @@
 				BF6469F724BE6E8100E624F2 /* GameTVCell.swift */,
 				BF02BDFC24BF409800E210E7 /* DetailGameViewController.swift */,
 				BF02BE0024BF4FC400E210E7 /* DeveloperProfileViewController.swift */,
-				BF02BE0424BF5ADF00E210E7 /* FavoriteGamesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,7 +146,6 @@
 				BF6469F824BE6E8100E624F2 /* GameTVCell.xib */,
 				BF02BDFD24BF409800E210E7 /* DetailGameViewController.xib */,
 				BF02BE0124BF4FC400E210E7 /* DeveloperProfileViewController.xib */,
-				BF02BE0524BF5ADF00E210E7 /* FavoriteGamesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFEAEFD124B3590E00ED76B0 /* LaunchScreen.storyboard in Resources */,
-				BF02BE0724BF5ADF00E210E7 /* FavoriteGamesViewController.xib in Resources */,
 				BF02BDFF24BF409800E210E7 /* DetailGameViewController.xib in Resources */,
 				BFEAEFCE24B3590E00ED76B0 /* Assets.xcassets in Resources */,
 				BF02BE0324BF4FC400E210E7 /* DeveloperProfileViewController.xib in Resources */,
@@ -284,7 +276,6 @@
 				BF02BE0924BFF1F500E210E7 /* GameModel.swift in Sources */,
 				BF02BE0224BF4FC400E210E7 /* DeveloperProfileViewController.swift in Sources */,
 				BFEAEFC724B3590A00ED76B0 /* SceneDelegate.swift in Sources */,
-				BF02BE0624BF5ADF00E210E7 /* FavoriteGamesViewController.swift in Sources */,
 				BF6469F924BE6E8100E624F2 /* GameTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

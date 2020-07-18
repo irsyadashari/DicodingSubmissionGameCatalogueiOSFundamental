@@ -15,18 +15,18 @@ class GameTVCell: UITableViewCell {
     @IBOutlet weak var gameTitle: UILabel!
     @IBOutlet weak var gameRating: UILabel!
     @IBOutlet weak var gameReleasedDates: UILabel!
-    @IBOutlet weak var favoriteBtnCell: UIButton!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization code action:@selector(myAction)
+       
     }
+
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
     
 }

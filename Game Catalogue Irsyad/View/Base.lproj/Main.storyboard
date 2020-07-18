@@ -32,8 +32,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
                                             <tabBarItem tag="1" title="Home" image="house" catalog="system" id="6qu-kg-ZbX"/>
-                                            <tabBarItem tag="2" title="Favorite" image="star.fill" catalog="system" id="2tt-f8-yNl"/>
-                                            <tabBarItem tag="3" title="Profile" image="profile-icon" id="bLm-Ah-EDl"/>
+                                            <tabBarItem tag="2" title="Profile" image="profile-icon" id="bLm-Ah-EDl"/>
                                         </items>
                                         <color key="barTintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tabBar>
@@ -64,7 +63,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Game List" id="BBd-b4-oEZ"/>
                     <connections>
-                        <outlet property="favBtnTabBar" destination="2tt-f8-yNl" id="DqI-vr-3ad"/>
                         <outlet property="gameTableView" destination="lR6-va-PQV" id="BNx-CT-GZo"/>
                         <outlet property="homeBtnTabBar" destination="6qu-kg-ZbX" id="Hvl-zx-6dV"/>
                         <outlet property="profileBtnTabBar" destination="bLm-Ah-EDl" id="XyG-b9-Nn8"/>
@@ -102,6 +100,5 @@
         <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="profile-icon" width="18.666666030883789" height="18.666666030883789"/>
-        <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>
