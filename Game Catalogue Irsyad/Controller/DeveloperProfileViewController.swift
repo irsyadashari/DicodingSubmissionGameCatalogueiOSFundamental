@@ -10,9 +10,11 @@ import UIKit
 
 class DeveloperProfileViewController: UIViewController {
 
+    @IBOutlet weak var profilePic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
 

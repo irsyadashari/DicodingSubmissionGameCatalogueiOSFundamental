@@ -82,7 +82,7 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date : 22 July 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-qM-pbv">
-                                    <rect key="frame" x="192" y="56.000000000000057" width="213.66666666666663" height="20.333333333333329"/>
+                                    <rect key="frame" x="185.33333333333337" y="56.000000000000007" width="213.66666666666663" height="20.333333333333336"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -91,7 +91,6 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="top" secondItem="wsA-26-yt7" secondAttribute="top" constant="51.000000000000007" id="EtX-G6-dkm"/>
-                                <constraint firstItem="hJy-qM-pbv" firstAttribute="leading" secondItem="UOx-UG-Y8c" secondAttribute="trailing" constant="-222" id="FOr-QZ-Wg8"/>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" constant="11" id="W1E-3m-Vlg"/>
                                 <constraint firstItem="hLk-cu-qOt" firstAttribute="leading" secondItem="wsA-26-yt7" secondAttribute="leading" constant="10" id="adK-0f-jHo"/>
                                 <constraint firstItem="UOx-UG-Y8c" firstAttribute="top" secondItem="wsA-26-yt7" secondAttribute="top" id="aic-F4-jXV"/>
@@ -112,6 +111,7 @@
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="trailing" secondItem="bQy-5d-Hge" secondAttribute="trailing" id="5Dl-yM-pbO"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="top" secondItem="bQy-5d-Hge" secondAttribute="top" id="5f1-xV-y2I"/>
                 <constraint firstItem="I0B-Hm-8Dk" firstAttribute="leading" secondItem="y0g-se-tq6" secondAttribute="leading" id="H5T-Bh-f51"/>
+                <constraint firstItem="y0g-se-tq6" firstAttribute="trailing" secondItem="hJy-qM-pbv" secondAttribute="trailing" constant="15" id="P8J-u9-5aR"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="bottom" secondItem="bQy-5d-Hge" secondAttribute="bottom" id="Zj6-l5-abW"/>
                 <constraint firstItem="y0g-se-tq6" firstAttribute="top" secondItem="I0B-Hm-8Dk" secondAttribute="top" id="aOz-bz-yfU"/>
                 <constraint firstItem="I0B-Hm-8Dk" firstAttribute="trailing" secondItem="y0g-se-tq6" secondAttribute="trailing" id="aSa-Ag-BfW"/>

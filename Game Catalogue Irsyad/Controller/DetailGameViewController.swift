@@ -22,22 +22,59 @@ class DetailGameViewController: UIViewController {
         
         // implementing game's data into UI
         if let result = game {
-            
-            // This line doesn't change
             let url = URL(string : result.poster)!
-            
-            // 2
             let request = ImageRequest(
                 url: url,
                 targetSize: CGSize(width: 414, height: 409),
                 contentMode: .aspectFill)
-            
+    
             Nuke.loadImage(with: request, into: gameDetailPoster)
             self.gameDetailTitle.text = result.title
             self.gameDetailRating.text = String(result.rating)
-            self.gameDetailReleaseDate.text = result.releasedDate
+            self.gameDetailReleaseDate.text = "Released Date : \(parseDate(dateUnformatted: result.releasedDate))"
         }
     }
+    
+    func parseDate(dateUnformatted: String)-> String{
+           
+           let fullDateArr : [String] = dateUnformatted.components(separatedBy: "-")
+           let year = fullDateArr[0]
+           let month = getMonthName(month: fullDateArr[1])
+           let day = fullDateArr[2]
+           let formattedDate : String = "\(day) \(month) \(year)"
+           return formattedDate
+       }
+       
+       func getMonthName(month: String)-> String{
+           switch month {
+           case "01":
+               return "January"
+           case "02":
+               return "February"
+           case "03":
+               return "March"
+           case "04":
+               return "April"
+           case "05":
+               return "Mei"
+           case "06":
+               return "June"
+           case "07":
+               return "July"
+           case "08":
+               return "August"
+           case "09":
+               return "September"
+           case "10":
+               return "Oktober"
+           case "11":
+               return "November"
+           case "12":
+               return "Desember"
+           default:
+               return " "
+           }
+       }
 }
 
 

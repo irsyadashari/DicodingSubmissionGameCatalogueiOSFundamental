@@ -14,6 +14,7 @@ class GameTVCell: UITableViewCell {
     @IBOutlet weak var gamePoster: UIImageView!
     @IBOutlet weak var gameTitle: UILabel!
     @IBOutlet weak var gameRating: UILabel!
+    @IBOutlet weak var gameReleasedDates: UILabel!
     
     
     override func awakeFromNib() {

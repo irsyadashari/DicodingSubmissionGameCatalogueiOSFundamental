@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeveloperProfileViewController" customModule="Game_Catalogue_Irsyad" customModuleProvider="target">
             <connections>
+                <outlet property="profilePic" destination="SVI-XN-Vyk" id="aCl-7O-xf3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,36 +21,26 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game-App-iOS-Dark-Grey-BG" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-bc-ul9" userLabel="BG">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnl-AI-0Ys">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <color key="barTintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <textAttributes key="titleTextAttributes">
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </textAttributes>
-                    <items>
-                        <navigationItem title="Developer's Profile" id="mat-qP-ynU"/>
-                    </items>
-                </navigationBar>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-XN-Vyk" userLabel="Profile Picture">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My Photo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-XN-Vyk" userLabel="Profile Picture">
                     <rect key="frame" x="80" y="108" width="254" height="215"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="215" id="BcU-gV-cus"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Muhammad Irsyad Ashari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28a-1q-QUT">
-                    <rect key="frame" x="75.333333333333343" y="334" width="263.66666666666663" height="28.666666666666686"/>
+                    <rect key="frame" x="20" y="334" width="374" height="28.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="muhirsyadashari@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-xB-9cT">
-                    <rect key="frame" x="91.333333333333329" y="402" width="231.66666666666669" height="21.666666666666686"/>
+                    <rect key="frame" x="20" y="402" width="374" height="21.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-vp-2PD">
-                    <rect key="frame" x="144.66666666666666" y="370" width="124.99999999999997" height="24"/>
+                    <rect key="frame" x="20" y="370" width="374" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -119,22 +110,25 @@
                 <constraint firstAttribute="trailing" secondItem="Efe-bc-ul9" secondAttribute="trailing" id="2r3-Ok-vJ9"/>
                 <constraint firstItem="SVI-XN-Vyk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="2xL-xS-fe2"/>
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5SL-Py-xaw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tnl-AI-0Ys" secondAttribute="trailing" id="5iV-Z1-moe"/>
                 <constraint firstItem="SVI-XN-Vyk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6th-Dy-JcO"/>
                 <constraint firstItem="28a-1q-QUT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7f0-V6-jZ7"/>
+                <constraint firstItem="28a-1q-QUT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9BU-e0-lB5"/>
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CGz-DO-ZQj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SVI-XN-Vyk" secondAttribute="trailing" constant="80" id="EGo-Ao-l6s"/>
                 <constraint firstItem="Efe-bc-ul9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ew1-Fw-uTl"/>
+                <constraint firstItem="SVI-XN-Vyk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="GEP-Ob-0wI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="28a-1q-QUT" secondAttribute="trailing" constant="20" id="I1B-hB-XRw"/>
+                <constraint firstItem="jeN-vp-2PD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MYf-Cp-Lku"/>
                 <constraint firstItem="28a-1q-QUT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q39-he-Ys8"/>
                 <constraint firstAttribute="bottom" secondItem="Efe-bc-ul9" secondAttribute="bottom" id="Rmp-tX-hXU"/>
-                <constraint firstItem="SVI-XN-Vyk" firstAttribute="top" secondItem="tnl-AI-0Ys" secondAttribute="bottom" constant="20" id="T76-lD-04n"/>
                 <constraint firstItem="sPO-xB-9cT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uzr-Ic-yec"/>
                 <constraint firstItem="Gna-q5-R92" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZVc-fK-ESr"/>
+                <constraint firstItem="sPO-xB-9cT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="btm-Nv-9Kz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gna-q5-R92" secondAttribute="bottom" constant="10" id="c5a-qx-YKY"/>
-                <constraint firstItem="tnl-AI-0Ys" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cjg-Pe-u7f"/>
-                <constraint firstItem="tnl-AI-0Ys" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e9d-Nx-eHj"/>
                 <constraint firstItem="sPO-xB-9cT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fOh-7M-FGA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jeN-vp-2PD" secondAttribute="trailing" constant="20" id="jX7-En-Yq8"/>
                 <constraint firstItem="28a-1q-QUT" firstAttribute="top" secondItem="SVI-XN-Vyk" secondAttribute="bottom" constant="11" id="k74-CO-cKM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sPO-xB-9cT" secondAttribute="trailing" constant="20" id="lFf-j1-pMB"/>
                 <constraint firstItem="Efe-bc-ul9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pGu-Mc-cKA"/>
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="top" secondItem="28a-1q-QUT" secondAttribute="bottom" constant="7.3333333333333144" id="pj3-iH-KZd"/>
                 <constraint firstItem="sPO-xB-9cT" firstAttribute="top" secondItem="jeN-vp-2PD" secondAttribute="bottom" constant="8" id="xOW-1p-MPC"/>
@@ -145,6 +139,7 @@
     </objects>
     <resources>
         <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
+        <image name="My Photo" width="428.66665649414062" height="428.66665649414062"/>
         <image name="icons8-github-96" width="96" height="96"/>
         <image name="icons8-instagram-96" width="96" height="96"/>
         <image name="icons8-linkedin-80" width="80" height="80"/>

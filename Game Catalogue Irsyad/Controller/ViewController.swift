@@ -8,15 +8,52 @@
 import UIKit
 import Nuke
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITabBarDelegate {
     
     @IBOutlet var gameTableView: UITableView!
+    @IBOutlet weak var homeBtnTabBar: UITabBarItem!
+    @IBOutlet weak var favBtnTabBar: UITabBarItem!
+    @IBOutlet weak var profileBtnTabBar: UITabBarItem!
+    @IBOutlet weak var tabBarHome: UITabBar!
+    
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if(item.tag == 1) {
+            // Code for item 1
+            print("item \(String(item.title!)) di klik")
+            let home = ViewController(nibName: "ViewController", bundle: nil)
+            self.navigationController?.pushViewController(home, animated: true)
+            
+        } else if(item.tag == 2) {
+            // Code for item 2
+            tabBarHome.selectedItem = tabBarHome.items![0]
+            print("item \(String(item.title!)) di klik")
+            let favorite = FavoriteGamesViewController(nibName: "FavoriteGamesViewController", bundle: nil)
+            self.navigationController?.pushViewController(favorite, animated: true)
+            
+        } else if(item.tag == 3) {
+            // Code for item 3
+            tabBarHome.selectedItem = tabBarHome.items![0]
+             print("item \(String(item.title!)) di klik")
+            let profile = DeveloperProfileViewController(nibName: "DeveloperProfileViewController", bundle: nil)
+            self.navigationController?.pushViewController(profile, animated: true)
+            
+        }
+//        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+//        detail.site = sites[indexPath.row]
+//
+//        self.navigationController?.pushViewController(detail, animated: true)
+    }
+    
     var gamesData = [GameData]()
     
     var gameManager = GameManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabBarHome.delegate = self
+        tabBarHome.selectedItem = tabBarHome.items![0]
         
         gameManager.delegate = self
         gameManager.fetchGames()
@@ -55,6 +92,52 @@ class ViewController: UIViewController {
     }
     
     
+    
+    func parseDate(dateUnformatted: String)-> String{
+        
+        let fullDateArr : [String] = dateUnformatted.components(separatedBy: "-")
+        let year = fullDateArr[0]
+        let month = getMonthName(month: fullDateArr[1])
+        let day = fullDateArr[2]
+        let formattedDate : String = "\(day) \(month) \(year)"
+        return formattedDate
+    }
+    
+    func getMonthName(month: String)-> String{
+        switch month {
+        case "01":
+            return "January"
+        case "02":
+            return "February"
+        case "03":
+            return "March"
+        case "04":
+            return "April"
+        case "05":
+            return "Mei"
+        case "06":
+            return "June"
+        case "07":
+            return "July"
+        case "08":
+            return "August"
+        case "09":
+            return "September"
+        case "10":
+            return "Oktober"
+        case "11":
+            return "November"
+        case "12":
+            return "Desember"
+        default:
+            return " "
+        }
+    }
+    
+}
+
+extension ViewController : UITableViewDataSource, UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Memanggil View Controller dengan berkas NIB/XIB di dalamnya
@@ -71,9 +154,6 @@ class ViewController: UIViewController {
         // Push mendorong view controller lain
         self.navigationController?.pushViewController(detail, animated: true)
     }
-}
-
-extension ViewController : UITableViewDataSource, UITableViewDelegate{
     
     //Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,6 +185,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate{
         Nuke.loadImage(with: request, options: options, into: cell.gamePoster)
         cell.gameTitle.text = game.gameTitle
         cell.gameRating.text = String(game.gameRating)
+        cell.gameReleasedDates.text = "Released Date : \(parseDate(dateUnformatted: game.gameReleasedDate))"
         
         return cell
     }

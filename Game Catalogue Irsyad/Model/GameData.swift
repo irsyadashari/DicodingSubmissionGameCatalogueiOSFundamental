@@ -31,25 +31,3 @@ struct GameData : Codable{
         case gameRating = "rating"
     }
 }
-
-
-
-
-
-// CONTOH DALAM ARRAY
-//-----------------------------------------------------------------
-//func dcdJSON(data: Data) {
-//    let decoder = JSONDecoder()
-//
-//    let games = try! decoder.decode(Games.self, from: data)
-//
-//    games.games.forEach{ game in
-//        print("id : \(game.id)")
-//        print("released date : \(game.released)")
-//        print("name : \(game.name)")
-//
-//    }
-//    print("PAGE: \(games.count)")
-//    print("TOTAL RESULTS: \(games.next)")
-//
-//}
