@@ -9,4 +9,5 @@ target 'Game Catalogue Irsyad' do
 
   # Pods for Game Catalogue Irsyad
    pod 'Nuke', '~> 7.0'
+   pod 'RealmSwift'   
 end

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="Game_Catalogue_Irsyad" customModuleProvider="target">
+            <connections>
+                <outlet property="favoriteTableView" destination="a23-IW-CKY" id="Mpp-qk-s0v"/>
+                <outlet property="noFavText" destination="Rew-YS-k0j" id="Xi6-mi-Eqy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="qWj-pB-KbL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game-App-iOS-Dark-Grey-BG" translatesAutoresizingMaskIntoConstraints="NO" id="tc2-Rz-p4e" userLabel="Dark Grey BG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-Ne-9Oi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="barTintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Favorite Games" id="xNV-P6-4Qc">
+                            <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left.fill" catalog="system" id="3Iq-9v-xBE">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="goBackToHome:" destination="-1" id="RS2-Tb-P4u"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="252" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a23-IW-CKY" userLabel="Favorite Table View">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="separatorColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexBackgroundColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belum ada game favorit!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rew-YS-k0j">
+                    <rect key="frame" x="114.5" y="437.5" width="185" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tc2-Rz-p4e" secondAttribute="trailing" id="5ph-r6-bT1"/>
+                <constraint firstItem="bjJ-Ne-9Oi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6CR-od-Mqg"/>
+                <constraint firstItem="bjJ-Ne-9Oi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7Bq-lK-135"/>
+                <constraint firstItem="bjJ-Ne-9Oi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7Yf-8z-IBl"/>
+                <constraint firstItem="tc2-Rz-p4e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dzq-Gv-gTY"/>
+                <constraint firstItem="a23-IW-CKY" firstAttribute="top" secondItem="bjJ-Ne-9Oi" secondAttribute="bottom" id="WJR-HC-BvK"/>
+                <constraint firstItem="Rew-YS-k0j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y8r-0L-9I3"/>
+                <constraint firstItem="bjJ-Ne-9Oi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z0i-VG-88o"/>
+                <constraint firstItem="a23-IW-CKY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZhE-w2-TKi"/>
+                <constraint firstItem="bjJ-Ne-9Oi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bMR-tz-wDB"/>
+                <constraint firstAttribute="bottom" secondItem="tc2-Rz-p4e" secondAttribute="bottom" id="csP-Qy-LTz"/>
+                <constraint firstItem="Rew-YS-k0j" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="l8a-gw-KbJ"/>
+                <constraint firstItem="a23-IW-CKY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oaa-jK-ilr"/>
+                <constraint firstItem="a23-IW-CKY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="p8O-YS-AhH"/>
+                <constraint firstItem="tc2-Rz-p4e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pdM-Qh-IYE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+    </resources>
+</document>
