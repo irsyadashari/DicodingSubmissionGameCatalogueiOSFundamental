@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="Game_Catalogue_Irsyad" customModuleProvider="target">
+            <connections>
+                <outlet property="editEmailLabel" destination="OCC-KK-MXT" id="uqT-i1-e8T"/>
+                <outlet property="editJobLabel" destination="F70-kJ-TLv" id="gcR-de-IGl"/>
+                <outlet property="editNameLabel" destination="QQa-5h-Urc" id="PIh-qb-xPd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game-App-iOS-Dark-Grey-BG" translatesAutoresizingMaskIntoConstraints="NO" id="knF-De-325">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uob-sc-etq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.23354241249999999" green="0.23737505079999999" blue="0.23736804719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="barTintColor" red="0.23354241249999999" green="0.23737505079999999" blue="0.23736804719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Edit Profile" id="IH5-68-WRY">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="IaY-rD-ptd">
+                                <connections>
+                                    <action selector="backBtn:" destination="-1" id="OBv-sn-Td9"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-5h-Urc">
+                    <rect key="frame" x="20" y="123" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F70-kJ-TLv">
+                    <rect key="frame" x="20" y="192" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCC-KK-MXT">
+                    <rect key="frame" x="20" y="261" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa6-Mi-dvp" userLabel="Save Button">
+                    <rect key="frame" x="190" y="802" width="34" height="30"/>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="saveButton:" destination="-1" eventType="touchUpInside" id="F3O-sE-nCm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F70-kJ-TLv" secondAttribute="trailing" constant="20" id="1Id-9g-ASD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QQa-5h-Urc" secondAttribute="trailing" constant="20" id="2gn-Qw-sDA"/>
+                <constraint firstAttribute="bottom" secondItem="knF-De-325" secondAttribute="bottom" id="Cgj-GY-PM2"/>
+                <constraint firstItem="knF-De-325" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DJA-Nk-vqY"/>
+                <constraint firstItem="Uob-sc-etq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EU6-1u-UAJ"/>
+                <constraint firstItem="QQa-5h-Urc" firstAttribute="top" secondItem="Uob-sc-etq" secondAttribute="bottom" constant="35" id="GNP-QM-qP1"/>
+                <constraint firstItem="QQa-5h-Urc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GVG-wq-Kpx"/>
+                <constraint firstItem="OCC-KK-MXT" firstAttribute="top" secondItem="F70-kJ-TLv" secondAttribute="bottom" constant="35" id="HaI-tm-vnE"/>
+                <constraint firstItem="F70-kJ-TLv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QQw-y6-Jpf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pa6-Mi-dvp" secondAttribute="bottom" constant="30" id="Xoi-He-sef"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="knF-De-325" secondAttribute="trailing" id="fID-d7-R82"/>
+                <constraint firstItem="OCC-KK-MXT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="i7b-lZ-7JZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OCC-KK-MXT" secondAttribute="trailing" constant="20" id="khB-jd-OLJ"/>
+                <constraint firstItem="knF-De-325" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kiw-lG-4KM"/>
+                <constraint firstItem="Pa6-Mi-dvp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="knO-kM-F3g"/>
+                <constraint firstItem="Uob-sc-etq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="m4T-Mu-e0U"/>
+                <constraint firstItem="Uob-sc-etq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mJu-lc-Q0z"/>
+                <constraint firstItem="F70-kJ-TLv" firstAttribute="top" secondItem="QQa-5h-Urc" secondAttribute="bottom" constant="35" id="rFs-EN-DpG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
+    </resources>
+</document>

@@ -24,6 +24,7 @@ class ViewController: UIViewController,UITabBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         loadingIndicator.isHidden = false
         
         tabBarHome.delegate = self
@@ -82,6 +83,8 @@ class ViewController: UIViewController,UITabBarDelegate {
         }else if(item.tag == 3) {
             // Code for item 3
             tabBarHome.selectedItem = tabBarHome.items![0]
+            
+         
             
             let profile = DeveloperProfileViewController(nibName: "DeveloperProfileViewController", bundle: nil)
             self.navigationController?.pushViewController(profile, animated: true)

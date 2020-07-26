@@ -15,6 +15,6 @@ class FavoriteGameData : Object{
     @objc dynamic var releasedDate : String = ""
     @objc dynamic var rating : String = ""
 
-//    let items = List<Item>()
+    let items = List<Item>()
   
 }

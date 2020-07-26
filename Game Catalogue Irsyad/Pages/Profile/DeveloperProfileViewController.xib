@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeveloperProfileViewController" customModule="Game_Catalogue_Irsyad" customModuleProvider="target">
             <connections>
+                <outlet property="profileEmailLabel" destination="sPO-xB-9cT" id="53p-dy-tzJ"/>
+                <outlet property="profileJobLabel" destination="jeN-vp-2PD" id="L2T-rf-UcD"/>
+                <outlet property="profileNameLabel" destination="28a-1q-QUT" id="Vwi-kn-b73"/>
                 <outlet property="profilePic" destination="SVI-XN-Vyk" id="aCl-7O-xf3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,26 +25,26 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My Photo" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-XN-Vyk" userLabel="Profile Picture">
-                    <rect key="frame" x="97" y="108" width="220" height="220"/>
+                    <rect key="frame" x="97" y="144" width="220" height="220"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="220" id="BcU-gV-cus"/>
                         <constraint firstAttribute="width" constant="220" id="D5E-sb-cLh"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Muhammad Irsyad Ashari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28a-1q-QUT">
-                    <rect key="frame" x="20" y="348" width="374" height="28.666666666666686"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Muhammad Irsyad Ashari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="28a-1q-QUT">
+                    <rect key="frame" x="20" y="384" width="374" height="28.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="muhirsyadashari@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-xB-9cT">
-                    <rect key="frame" x="20" y="415.66666666666669" width="374" height="21.666666666666686"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="muhirsyadashari@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-xB-9cT">
+                    <rect key="frame" x="20" y="451.66666666666669" width="374" height="21.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-vp-2PD">
-                    <rect key="frame" x="20" y="383.66666666666669" width="374" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-vp-2PD">
+                    <rect key="frame" x="20" y="419.66666666666669" width="374" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -119,6 +122,17 @@
                         <action selector="backToHome:" destination="-1" eventType="touchUpInside" id="trP-uZ-3qJ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2R-Nf-oDo" userLabel="Edit Button">
+                    <rect key="frame" x="319" y="66" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5Pm-De-Uhx"/>
+                        <constraint firstAttribute="width" constant="75" id="BaA-Ud-aIP"/>
+                    </constraints>
+                    <state key="normal" title="Edit Profile"/>
+                    <connections>
+                        <action selector="goToEdit:" destination="-1" eventType="touchUpInside" id="UP5-x6-oYC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -126,11 +140,13 @@
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5SL-Py-xaw"/>
                 <constraint firstItem="28a-1q-QUT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9BU-e0-lB5"/>
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CGz-DO-ZQj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i2R-Nf-oDo" secondAttribute="trailing" constant="20" id="Dva-4G-Jap"/>
                 <constraint firstItem="Efe-bc-ul9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ew1-Fw-uTl"/>
-                <constraint firstItem="SVI-XN-Vyk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="GEP-Ob-0wI"/>
+                <constraint firstItem="SVI-XN-Vyk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="GEP-Ob-0wI"/>
                 <constraint firstItem="2jf-KT-zQz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="Gtk-JE-0QZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="28a-1q-QUT" secondAttribute="trailing" constant="20" id="I1B-hB-XRw"/>
                 <constraint firstItem="2jf-KT-zQz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Kt9-yK-Ky7"/>
+                <constraint firstItem="i2R-Nf-oDo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="22" id="Ldg-8C-TyT"/>
                 <constraint firstItem="jeN-vp-2PD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MYf-Cp-Lku"/>
                 <constraint firstItem="28a-1q-QUT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q39-he-Ys8"/>
                 <constraint firstAttribute="bottom" secondItem="Efe-bc-ul9" secondAttribute="bottom" id="Rmp-tX-hXU"/>
