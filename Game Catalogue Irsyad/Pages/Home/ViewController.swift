@@ -82,9 +82,7 @@ class ViewController: UIViewController,UITabBarDelegate {
             
         }else if(item.tag == 3) {
             // Code for item 3
-            tabBarHome.selectedItem = tabBarHome.items![0]
-            
-         
+            tabBarHome.selectedItem = tabBarHome.items![0]       
             
             let profile = DeveloperProfileViewController(nibName: "DeveloperProfileViewController", bundle: nil)
             self.navigationController?.pushViewController(profile, animated: true)

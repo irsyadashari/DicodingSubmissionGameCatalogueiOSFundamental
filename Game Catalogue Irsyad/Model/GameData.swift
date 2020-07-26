@@ -6,7 +6,6 @@
 //  Copyright © 2020 Ashari Corps. All rights reserved.
 //
 
-import UIKit
 import Foundation
 
 struct GamesModel : Codable{
